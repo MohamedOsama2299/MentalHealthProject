@@ -1,0 +1,20 @@
+﻿using CBTClinic.Application.DTOs.Option;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CBTClinic.Application.DTOs.Question
+{
+    public class QuestionDto
+    {
+        public int Id { get; set; }
+
+        public string Text { get; set; }
+
+        public int Order { get; set; }
+
+        public List<OptionDto> Options { get; set; }
+    }
+}
