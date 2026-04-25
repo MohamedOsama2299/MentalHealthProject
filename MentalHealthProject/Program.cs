@@ -98,8 +98,8 @@ namespace MentalHealthProject
 
 
 
-            // Middleware
-            if (app.Environment.IsDevelopment())
+
+            if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
@@ -107,7 +107,7 @@ namespace MentalHealthProject
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles(); 
+            app.UseStaticFiles();
 
 
             app.UseAuthentication();
